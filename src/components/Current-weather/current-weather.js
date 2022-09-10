@@ -13,7 +13,7 @@ const CurrentWeather = ({data}) => {
       </div>
 
       <div className="bottom">
-          <p className="tempreture">{data.main.temp}</p>
+          <p className="tempreture">{Math.round(data.main.temp)}°C</p>
           <div className="details">
             <div className="parameter-row">
               <span className="parameter-label head">Details</span>
@@ -21,11 +21,11 @@ const CurrentWeather = ({data}) => {
 
             <div className="parameter-row">
               <span className="parameter-label">Feels Like</span>
-              <span className="parameter-value">{data.main.feels_like}</span>
+              <span className="parameter-value">{data.main.feels_like}°C</span>
             </div>
             <div className="parameter-row">
               <span className="parameter-label">Wind</span>
-              <span className="parameter-value">{data.wind.speed}</span>
+              <span className="parameter-value">{data.wind.speed}m/s</span>
             </div>
 
             <div className="parameter-row">
@@ -35,7 +35,7 @@ const CurrentWeather = ({data}) => {
 
             <div className="parameter-row">
               <span className="parameter-label">Pressure</span>
-              <span className="parameter-value">{data.main.pressure}</span>
+              <span className="parameter-value">{data.main.pressure}hPa</span>
             </div>
           </div>
         </div>
