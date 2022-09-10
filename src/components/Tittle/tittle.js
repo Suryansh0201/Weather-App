@@ -4,7 +4,7 @@ const Tittle = () => {
   return (
     <div className='titleLogo'>
         <div className='divLogo'>
-        <img alt='Logo' className='logo' src="icons/favicon.ico"/>
+        <img alt='Logo' className='logo' src="icons/logo.png"/>
         </div>
         <div className='title'>
     <h1 >Weather App</h1>
